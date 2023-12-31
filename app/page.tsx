@@ -1,4 +1,5 @@
 import NavBar from "./components/NavBar";
+import HamburgerNavbar from "./components/NavBarHamburger";
 export default function Home() {
   const navBarLinks = [
     {
@@ -40,6 +41,8 @@ export default function Home() {
   return (
     <>
       <NavBar linksProps={navBarLinks} />
+      <HamburgerNavbar/>
+
       <h1 className="text-3xl font-bold underline">Hello world!</h1>
     </>
   );
